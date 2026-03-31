@@ -1,0 +1,27 @@
+html, body{
+    max-width: 1592px;
+    margin: 0 auto;
+}
+
+div.image-view{
+    height: 490px;
+    width: 93%;
+    border-radius: 69px;
+    position: relative;
+    margin-top: 194px;
+}
+
+
+div.image-view picture img{
+    min-width: 828px;
+        height: auto;
+        object-fit: contain;
+        object-position: center;
+        top: -83px;
+
+}
+
+
+div.layout-benefit{
+    grid-template-columns: repeat(4, 1fr);
+}
