@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --color-text: #000;
+    --color-info: #929292;
+    --color-grey: #E9E9E9;
+    --color-background: #E9E9E9;
+    --color-litegreen: #DFECC6;
+    --color-middlegreen: #8E9C78;
+    --color-darkgreen: #485C11;
+
+    --text-titles: 'Crimson Text';
+    --text-caption: 'Roboto Mono';
+    --text-paragraph: 'DM Sans'
+
+}
+
+/*Configurações gerais*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-family: var(--text-paragraph);
+}
+
+ul {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    margin: 14px 0;
+}
+
+hr{
+    margin: 23px auto;
+    width: 90%;
+    color: var(--color-info);
+    opacity: 70%;
+}
+
+/*Configurações de layout*/
+
+div.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Configurações de nav-bar*/
+
+nav.nav-bar{
+    padding: 20px 20px 32px 20px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 4px 9px 0px rgba(0,0,0,0.1);
+    border-radius: 0 0 20px 20px;
+}
+
+.nav-bar h1{
+    font-weight: normal;
+    font-size: 30px;
+}
+
+div.link-menu{
+    display: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-top: 15px;
+}
+
+section.principal{
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+
+section.principal h1{
+    font-family: var(--text-titles);
+    text-align: center;
+    font-weight: normal;
+    font-size: 7rem;
+    letter-spacing: -4.25%;
+}
+
+
+div.image-view{
+    height: 400px;
+    width: 93%;
+    margin: 0 auto;
+    background-color: var(--color-darkgreen);
+    border-radius: 20px;
+    position: relative;
+    margin-top: 100px;
+}
+
+
+div.image-view picture img{
+    max-width: 430px;
+    height: auto;
+    object-fit: cover; 
+    object-position: bottom;/* Trava a base da imagem no fundo da caixa */
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -80px;
+    z-index: 3;
+}
+
+section.trusted{
+    position: relative;
+    z-index: 4;
+    margin-top: -60px;
+    background-color: #fff;
+}
+
+section.trusted p#texto{
+    padding: 20px 0 20px 30px;
+    color: var(--color-info);
+}
+
+div.logos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(179px, auto));
+    justify-content: space-evenly;
+    
+}
+
+div.logos p{
+    width: 210px;
+    height: 138px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 47%;
+}
+
+section.explain, section.view{
+    width: 93%;
+    margin: 40px auto;
+}
+
+section.explain p.mini-title{
+    font-family: var(--text-caption);
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: -1%;
+    color: var(--color-info);
+}
+
+section.explain h2, section.view h2{
+    font-size: 60px;
+    font-weight: normal;
+    letter-spacing: -3%;
+    font-family: var(--text-titles);
+}
+
+section.explain p, div.benefits p, section.view p{
+    font-family: var(--text-paragraph);
+    font-size: 15px;
+    letter-spacing: -0.5%;
+    color: var(--color-info);
+}
+
+div.layout-benefit{
+    display: grid;
+  gap: 10px;
+  /* Mobile: 1 coluna por padrão */
+  grid-template-columns: 1fr;
+}
+
+div.benefits{
+    height: 25vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    
+}
+
+div.benefits h3{
+    font-family: var(--text-titles);
+    font-size: 18px;
+    letter-spacing: -3%;
+    font-weight: bold;
+}
+
+section.explain img{
+    max-width: 430px;
+    height: 550px;
+    margin: 70px 0;
+    border-radius: 20px;
+    object-fit: cover; 
+    object-position: center;
+    display: block;
+    margin: 60px auto;
+}
