@@ -36,7 +36,32 @@ div.layout-benefit{
     grid-template-columns: repeat(2, 1fr);
 }
 
-section.explain img{
+img.images-page{
     min-width: 90%;
     height: auto;
 }
+
+div.layout-plans{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 25px 0;
+    
+}
+
+div.plans{
+    padding: 28px;
+    margin: 0;
+}
+
+div.plans hr{
+    width: 100%;
+}
+
+
+div.side-discover{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
