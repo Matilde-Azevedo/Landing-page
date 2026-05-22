@@ -1,3 +1,7 @@
+body{
+    min-width: 88%;
+}
+
 div.link-menu {
     display: flex;
 }
